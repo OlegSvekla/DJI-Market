@@ -1,0 +1,69 @@
+.page {
+  min-height: 100%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-canvas);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: var(--space-4) 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.logo {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-control);
+  background: var(--color-ink);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.title {
+  font-size: var(--text-lg);
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.subtitle {
+  margin-top: var(--space-1);
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: var(--space-6) 2rem;
+}
+
+.footnote {
+  padding: var(--space-2) 0 2rem;
+  text-align: center;
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+}

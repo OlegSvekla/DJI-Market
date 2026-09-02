@@ -1,0 +1,22 @@
+.main {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background: var(--avatar-color, var(--color-brand));
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.md {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 0.75rem;
+}
+
+.sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: var(--text-xs);
+}
