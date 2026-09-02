@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DJI.Bl/DJI.Bl.csproj" />
+    <Project Path="src/DJI.Contracts/DJI.Contracts.csproj" />
+    <Project Path="src/DJI.Core/DJI.Core.csproj" />
+    <Project Path="src/DJI.Infrastructure/DJI.Infrastructure.csproj" />
+    <Project Path="src/DJI.Web/DJI.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DJI.Tests/DJI.Tests.csproj" />
+  </Folder>
+</Solution>
