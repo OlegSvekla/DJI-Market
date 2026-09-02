@@ -1,0 +1,40 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-control);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.flat {
+  background: var(--color-line-soft);
+  color: var(--color-ink-soft);
+}
+
+.good {
+  background: var(--color-up-soft);
+  color: var(--color-up);
+}
+
+.bad {
+  background: var(--color-down-soft);
+  color: var(--color-down);
+}
+
+.empty {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+  white-space: nowrap;
+}
+
+.icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}

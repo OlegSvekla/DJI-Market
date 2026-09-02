@@ -1,0 +1,43 @@
+@host = http://localhost:5080
+
+GET {{host}}/health
+
+###
+
+GET {{host}}/api/analytics/kpi?preset=Last30Days
+Accept: application/json
+
+###
+
+GET {{host}}/api/analytics/managers?preset=Last30Days&sortBy=GrossProfit
+Accept: application/json
+
+###
+
+GET {{host}}/api/analytics/timeseries?preset=ThisMonth&granularity=Auto
+Accept: application/json
+
+###
+
+GET {{host}}/api/analytics/categories?preset=LastMonth
+Accept: application/json
+
+###
+
+GET {{host}}/api/analytics/top-products?preset=Last7Days&limit=10
+Accept: application/json
+
+###
+
+GET {{host}}/api/sales/recent?preset=Last30Days&page=1&pageSize=20&status=Paid
+Accept: application/json
+
+###
+
+GET {{host}}/api/meta/filters
+Accept: application/json
+
+###
+
+GET {{host}}/api/analytics/kpi?preset=Custom&from=2026-01-01&to=2026-03-31
+Accept: application/json

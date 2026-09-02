@@ -1,0 +1,217 @@
+.filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.125rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-control);
+}
+
+.filter {
+  padding: var(--space-1) 0.625rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  transition: background 0.2s, color 0.2s;
+}
+
+.filter:hover {
+  background: var(--color-line-soft);
+  color: var(--color-ink);
+}
+
+.filterActive,
+.filterActive:hover {
+  background: var(--color-ink);
+  color: #ffffff;
+}
+
+.body {
+  padding: var(--space-2);
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 56.25rem;
+  font-size: var(--text-md);
+}
+
+.headRow th {
+  padding: 0 var(--space-3) var(--space-2);
+  text-align: left;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.fetching {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.row {
+  transition: background 0.2s;
+}
+
+.row:hover {
+  background: var(--color-line-soft);
+}
+
+.row td {
+  padding: var(--space-2) var(--space-3);
+}
+
+.date,
+.number {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
+
+.number {
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.managerName,
+.company,
+.contact,
+.items,
+.itemsMore {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.managerName {
+  color: var(--color-ink-soft);
+}
+
+.company {
+  color: var(--color-ink);
+}
+
+.contact,
+.itemsMore {
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+}
+
+.itemsCell {
+  max-width: 13.75rem;
+}
+
+.items {
+  color: var(--color-ink-soft);
+}
+
+.status {
+  display: inline-flex;
+  padding: 0.125rem var(--space-2);
+  border-radius: 0.375rem;
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.statusPaid {
+  background: var(--color-up-soft);
+  color: var(--color-up);
+}
+
+.statusCancelled {
+  background: var(--color-line-soft);
+  color: var(--color-ink-soft);
+}
+
+.statusRefunded {
+  background: var(--color-warn-soft);
+  color: var(--color-warn);
+}
+
+.amount {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink);
+}
+
+.amountVoid {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-faint);
+  text-decoration: line-through;
+}
+
+.profit {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-up);
+}
+
+.profitVoid {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-faint);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  border-top: 1px solid var(--color-line-soft);
+  font-size: 0.75rem;
+  color: var(--color-ink-soft);
+}
+
+.pageLabel {
+  font-variant-numeric: tabular-nums;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.pagerButton {
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--color-line);
+  border-radius: 0.375rem;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.pagerButton:hover:not(:disabled) {
+  background: var(--color-line-soft);
+}
+
+.pagerButton:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pagerIcon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}

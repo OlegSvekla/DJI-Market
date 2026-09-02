@@ -1,0 +1,28 @@
+.body {
+  height: 18.75rem;
+  padding: var(--space-4) var(--space-3);
+}
+
+.full {
+  height: 100%;
+}
+
+.tooltip {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-popover);
+  font-size: 0.75rem;
+}
+
+.tooltipName {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.tooltipRow {
+  margin-top: var(--space-1);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+}
